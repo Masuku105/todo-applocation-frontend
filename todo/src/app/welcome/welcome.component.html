@@ -1,0 +1,16 @@
+<h1> Hello! {{name}}</h1>
+<div class="conatiner">
+  You can manage your todos <a routerLink="/todos">Here</a>
+</div>
+<div class="conatiner">
+  Click here to get a cumstomize message <br>
+  <button  (click)=getWelcomeMessage() class="btn btn-success">Get Welcome Message</button>
+</div>
+<div class="conatiner">
+  Click here to get a cumstomize message with parameter <br>
+  <button  (click)=getWelcomeMessageWithParameter() class="btn btn-success">Get Welcome Message</button>
+</div>
+<div class="conatiner" *ngIf="messageFromSerive">
+ <h2>This Message Comes From the Java Controller</h2>
+ {{messageFromSerive}}
+</div>
